@@ -1,18 +1,3 @@
-// let darkMode = "dark-mode";
-// let lightMode = "light-mode";
-
-// if (localStorage.getItem(darkMode) === null) {
-//   localStorage.setItem(darkMode, "false");
-// }
-
-// function toggleDarkLight() {
-//   let body = document.getElementById("body");
-
-//   let currentClass = body.className;
-
-//   body.className = currentClass == darkMode ? lightMode : darkMode;
-// }
-
 let checkbox = document.getElementById("changeTheme"); //get the checkbox to a variable
 
 //check storage if dark mode was on or off
