@@ -1,9 +1,15 @@
 import React from "react";
 import { education } from "../data";
+import { motion } from "framer-motion";
 
 const Education: React.FC = () => {
   return (
-    <section className="my-8 px-8">
+    <motion.section
+      className="my-8 px-8"
+      initial={{ opacity: 0, x: -50, scale: 0.5 }}
+      whileInView={{ opacity: 1, x: 0, scale: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <h3 className="text-2xl font-semibold mb-4">Education</h3>
       <div className="space-y-4">
         {education.map((edu, index) => (
@@ -24,7 +30,7 @@ const Education: React.FC = () => {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

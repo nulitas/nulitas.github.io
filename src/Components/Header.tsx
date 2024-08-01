@@ -28,10 +28,7 @@ const Header: React.FC = () => {
       >
         <h1 className="text-3xl font-bold">{header.name}</h1>
         <p className="text-gray-600">
-          <span role="img" aria-label="location">
-            📍
-          </span>{" "}
-          {header.location}
+          <span role="img" aria-label="location"></span> {header.location}
         </p>
       </motion.div>
     </motion.header>

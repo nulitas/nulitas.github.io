@@ -100,7 +100,7 @@ export const projects: ProjectItem[] = [
       "Developed a note-taking application using ReactJS empowers users to capture and save ideas, while an archive feature keeps past entries organized for easy retrieval, ensuring valuable information remains readily accessible.",
     statusTags: ["No edit?"],
     tags: ["In progress", "React"],
-    githubLink: "https://github.com/andra-rizki-pratama/notedx",
+    githubLink: "https://github.com/nulitas/notedx",
   },
   {
     title: "Anime OR Not",
@@ -108,7 +108,7 @@ export const projects: ProjectItem[] = [
       "Created a user-friendly web application using Flask that lets users upload images and get predictions from a powerful image classifier.",
     statusTags: ["Anime? Is that a cartoon?"],
     tags: ["In progress", "Flask"],
-    githubLink: "https://github.com/andra-rizki-pratama/anime-or-not",
+    githubLink: "https://github.com/nulitas/anime-or-not",
   },
   {
     title: "CI4 Point of Sale",
@@ -116,7 +116,7 @@ export const projects: ProjectItem[] = [
       "Built a user-friendly point-of-sale (POS) application using CodeIgniter4 to streamline sales management.",
     statusTags: ["E-commerce lite"],
     tags: ["Outdated. Might update it later.", "CodeIgniter4"],
-    githubLink: "https://github.com/andra-rizki-pratama/ci4-point-of-sale",
+    githubLink: "https://github.com/nulitas/ci4-point-of-sale",
   },
 ];
 
