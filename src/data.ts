@@ -1,12 +1,13 @@
 // data.ts
 import {
   SiLaravel,
-  SiNextdotjs,
-  SiPostgresql,
+  SiMysql,
   SiReact,
   SiTailwindcss,
   SiTypescript,
+  SiPhp,
   SiFastapi,
+  SiPython,
 } from "react-icons/si";
 
 export interface ExperienceItem {
@@ -18,6 +19,7 @@ export interface ExperienceItem {
 
 export interface ProjectItem {
   title: string;
+  image: string;
   description: string;
   statusTags: string[];
   tags: string[];
@@ -89,44 +91,58 @@ export const education: EducationItem[] = [
 export const projects: ProjectItem[] = [
   {
     title: "Novelicious",
+    image: "/novelicious.png",
     description:
       "Novelicious is an online bookstore dedicated to providing readers with a curated selection of Japanese light novels. As a book lover, I recognized the growing popularity of light novels and wanted to create a platform that celebrates this unique literary genre.",
-    statusTags: ["-"],
-    tags: ["React"],
+    statusTags: ["Finished"],
+    tags: ["Anime? Is that a cartoon?", "React"],
     githubLink: "https://github.com/novelicious/novelicious-website",
   },
   {
     title: "Notedx",
+    image: "/notedx.png",
     description:
       "Developed a note-taking application using ReactJS empowers users to capture and save ideas, while an archive feature keeps past entries organized for easy retrieval, ensuring valuable information remains readily accessible.",
-    statusTags: ["No edit?"],
-    tags: ["In progress", "React"],
+    statusTags: ["Finished"],
+    tags: ["No edit?", "React"],
     githubLink: "https://github.com/nulitas/notedx",
   },
   {
     title: "Anime OR Not",
+    image: "/anime_or_not.png",
     description:
       "Created a user-friendly web application using Flask that lets users upload images and get predictions from a powerful image classifier.",
-    statusTags: ["Anime? Is that a cartoon?"],
-    tags: ["In progress", "Flask"],
+    statusTags: ["Might update it later."],
+    tags: ["Anime? Is that a cartoon?", "Flask"],
     githubLink: "https://github.com/nulitas/anime-or-not",
   },
   {
     title: "CI4 Point of Sale",
+    image: "/posu.png",
     description:
       "Built a user-friendly point-of-sale (POS) application using CodeIgniter4 to streamline sales management.",
-    statusTags: ["E-commerce lite"],
-    tags: ["Outdated. Might update it later.", "CodeIgniter4"],
+    statusTags: ["Might update it later."],
+    tags: ["E-commerce lite "],
     githubLink: "https://github.com/nulitas/ci4-point-of-sale",
+  },
+  {
+    title: "Sipadu",
+    image: "/sipadu.png",
+    description:
+      "A user-friendly reporting mechanism allowing consumers to report issues or repairs for specific items. A reporting function that would make it simple for consumers to report any problems or repairs required for a particular item mostly using Laravel Livewire and TailwindCSS for the design.",
+    statusTags: ["Deployed."],
+    tags: ["Might update it later."],
+    githubLink: "https://sipadu.poltekkesjakarta3.ac.id/",
   },
 ];
 
 export const skills = [
   { text: "React", Icon: SiReact },
-  { text: "NextJS", Icon: SiNextdotjs },
   { text: "Tailwind", Icon: SiTailwindcss },
   { text: "TypeScript", Icon: SiTypescript },
   { text: "Laravel", Icon: SiLaravel },
   { text: "FastAPI", Icon: SiFastapi },
-  { text: "MySQL", Icon: SiPostgresql },
+  { text: "Python", Icon: SiPython },
+  { text: "PHP", Icon: SiPhp },
+  { text: "MySQL", Icon: SiMysql },
 ];
