@@ -19,9 +19,9 @@ const Projects: React.FC = () => {
             className="bg-white p-4 rounded-lg shadow-md relative hover:shadow-lg hover:cursor-pointer transition-shadow duration-300"
             whileHover={{ scale: 1.05 }}
             // whileTap={{ scale: 0.95 }}
-            drag
-            dragConstraints={false}
-            dragMomentum={false}
+            // drag
+            // dragConstraints={false}
+            // dragMomentum={false}
           >
             <div className="absolute top-4 right-4">
               {project.githubLink && (
