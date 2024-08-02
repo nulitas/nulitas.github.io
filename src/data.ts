@@ -6,6 +6,7 @@ import {
   SiReact,
   SiTailwindcss,
   SiTypescript,
+  SiFastapi,
 } from "react-icons/si";
 
 export interface ExperienceItem {
@@ -126,5 +127,6 @@ export const skills = [
   { text: "Tailwind", Icon: SiTailwindcss },
   { text: "TypeScript", Icon: SiTypescript },
   { text: "Laravel", Icon: SiLaravel },
+  { text: "FastAPI", Icon: SiFastapi },
   { text: "MySQL", Icon: SiPostgresql },
 ];
