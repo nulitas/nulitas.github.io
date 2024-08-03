@@ -46,7 +46,7 @@ export const header = {
 };
 
 export const about = {
-  description: `Highly motivated Web Developer with 2+ years of experience designing, developing, and maintaining user-friendly web applications using Laravel, CodeIgniter4, and React JS. I have experience in machine learning using the libraries TensorFlow, PyTorch, and Pandas. I like to explore new technologies and continuously learn to stay ahead of the curve.`,
+  description: `Dedicated Web Developer with over 2 years of experience in creating user-friendly applications using Laravel, CodeIgniter4, and React JS. Proficient in machine learning with TensorFlow, PyTorch, and Pandas. Passionate about exploring new technologies and continuous learning.`,
 };
 
 export const experiences: ExperienceItem[] = [
