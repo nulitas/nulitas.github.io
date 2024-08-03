@@ -1,35 +1,57 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { projects } from "../data";
 import { SiGithub } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const Projects: React.FC = () => {
-  const [filter, setFilter] = useState<string | null>(null);
+  const [visibleIndices, setVisibleIndices] = useState<number[]>([]);
 
-  const handleFilterClick = (tag: string) => {
-    setFilter((prev) => (prev === tag ? null : tag));
-  };
+  const observer = useRef<IntersectionObserver | null>(null);
 
-  const filteredProjects = filter
-    ? projects.filter(
-        (project) =>
-          project.tags.includes(filter) || project.statusTags.includes(filter)
-      )
-    : projects;
+  useEffect(() => {
+    observer.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = parseInt(entry.target.getAttribute("data-index")!, 10);
+          if (entry.isIntersecting) {
+            setVisibleIndices((prev) => {
+              if (!prev.includes(index)) {
+                return [...prev, index];
+              }
+              return prev;
+            });
+          } else {
+            setVisibleIndices((prev) => prev.filter((i) => i !== index));
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+
+    const elements = document.querySelectorAll(".project-card");
+    elements.forEach((el) => observer.current?.observe(el));
+
+    return () => observer.current?.disconnect();
+  }, []);
 
   return (
-    <motion.section
-      className="my-8 px-8"
-      initial={{ opacity: 0, x: -50, scale: 0.5 }}
-      whileInView={{ opacity: 1, x: 0, scale: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    <section className="my-8 px-8">
       <h3 className="text-2xl font-semibold mb-8">Projects</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {filteredProjects.map((project, index) => (
+        {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+            className="project-card bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+            data-index={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={
+              visibleIndices.includes(index)
+                ? { opacity: 1, y: 0 }
+                : { opacity: 0, y: 20 }
+            }
+            transition={{ duration: 0.5, delay: index * 0.1 }}
             whileHover={{ scale: 1.05 }}
           >
             <div className="relative overflow-hidden rounded-t-lg">
@@ -65,10 +87,7 @@ const Projects: React.FC = () => {
                 {project.statusTags.map((tag, index) => (
                   <span
                     key={index}
-                    className={`cursor-pointer bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs ${
-                      filter === tag ? "bg-blue-700 text-white" : ""
-                    }`}
-                    onClick={() => handleFilterClick(tag)}
+                    className="cursor-pointer bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs"
                   >
                     {tag}
                   </span>
@@ -78,10 +97,7 @@ const Projects: React.FC = () => {
                 {project.tags.map((tag, index) => (
                   <span
                     key={index}
-                    className={`cursor-pointer bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-xs ${
-                      filter === tag ? "bg-gray-700 text-white" : ""
-                    }`}
-                    onClick={() => handleFilterClick(tag)}
+                    className="cursor-pointer bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-xs"
                   >
                     {tag}
                   </span>
@@ -91,7 +107,7 @@ const Projects: React.FC = () => {
           </motion.div>
         ))}
       </div>
-    </motion.section>
+    </section>
   );
 };
 

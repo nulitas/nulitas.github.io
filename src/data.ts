@@ -95,7 +95,7 @@ export const projects: ProjectItem[] = [
     description:
       "Novelicious is an online bookstore dedicated to providing readers with a curated selection of Japanese light novels. As a book lover, I recognized the growing popularity of light novels and wanted to create a platform that celebrates this unique literary genre.",
     statusTags: ["Finished"],
-    tags: ["Anime? Is that a cartoon?", "React"],
+    tags: ["React.js", "FastAPI", "E-commerce"],
     githubLink: "https://github.com/novelicious/novelicious-website",
   },
   {
@@ -104,7 +104,7 @@ export const projects: ProjectItem[] = [
     description:
       "Developed a note-taking application using ReactJS empowers users to capture and save ideas, while an archive feature keeps past entries organized for easy retrieval, ensuring valuable information remains readily accessible.",
     statusTags: ["Finished"],
-    tags: ["No edit?", "React"],
+    tags: ["React.js"],
     githubLink: "https://github.com/nulitas/notedx",
   },
   {
@@ -131,7 +131,7 @@ export const projects: ProjectItem[] = [
     description:
       "A user-friendly reporting mechanism allowing consumers to report issues or repairs for specific items. A reporting function that would make it simple for consumers to report any problems or repairs required for a particular item mostly using Laravel Livewire and TailwindCSS for the design.",
     statusTags: ["Deployed."],
-    tags: ["Might update it later."],
+    tags: ["Laravel"],
     githubLink: "https://sipadu.poltekkesjakarta3.ac.id/",
   },
 ];

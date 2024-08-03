@@ -11,8 +11,7 @@ const SkillItem: React.FC<{ text: string; Icon: React.ComponentType<any> }> = ({
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       drag
-      dragConstraints={false}
-      dragMomentum={false}
+      dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
       className="bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm flex items-center gap-2 hover:cursor-pointer"
     >
       <Icon size={20} />

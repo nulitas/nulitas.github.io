@@ -24,8 +24,10 @@ const Experience: React.FC = () => {
             <h3 className="text-xl font-semibold">{experience.title}</h3>
             <span className="text-gray-600">{experience.date}</span>
           </div>
-          {/* <h4 className="text-lg font-medium">{experience.role}</h4> */}
-          <p>{experience.description}</p>
+
+          <div className="text-justify">
+            <p>{experience.description}</p>
+          </div>
         </motion.div>
       ))}
     </motion.section>
