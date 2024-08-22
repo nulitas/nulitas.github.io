@@ -90,6 +90,15 @@ export const education: EducationItem[] = [
 
 export const projects: ProjectItem[] = [
   {
+    title: "TanyaSahabat",
+    image: "/chat.png",
+    description:
+      "A virtual assistant website application that allows users to interact through a conversation (chat) setting. The interface can receive questions, provide answers, and store conversation history.",
+    statusTags: ["Finished"],
+    tags: ["React.js", "FastAPI"],
+    githubLink: "https://github.com/novelicious/tanya-sahabat",
+  },
+  {
     title: "Novelicious",
     image: "/novelicious.png",
     description:
