@@ -46,7 +46,8 @@ export const header = {
 };
 
 export const about = {
-  description: `Dedicated Web Developer with over 2 years of experience in creating user-friendly applications using Laravel, CodeIgniter4, and React JS. Proficient in machine learning with TensorFlow, PyTorch, and Pandas. Passionate about exploring new technologies and continuous learning.`,
+  description: `Informatics Engineering student with over 2 years of hands-on experience in Web Development, specializing in both internal and open-source projects.`,
+  cv: "CV_Andra.pdf",
 };
 
 export const experiences: ExperienceItem[] = [
