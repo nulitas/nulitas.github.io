@@ -11,10 +11,12 @@ const About: React.FC = () => {
       transition={{ duration: 0.5 }}
     >
       <h2 className="text-2xl font-semibold mb-4">About</h2>
-      <div className="flex items-center justify-between">
-        <p className="text-justify flex-1 pr-4">{about.description}</p>
+      <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
+        <p className="text-justify flex-1 pr-0 md:pr-4 mb-4 md:mb-0">
+          {about.description}
+        </p>
         <a href={about.cv} target="_blank" rel="noopener noreferrer">
-          <button className="px-6 py-3 text-black font-semibold underline ">
+          <button className="px-6 py-3 text-black font-semibold underline">
             resume.
           </button>
         </a>

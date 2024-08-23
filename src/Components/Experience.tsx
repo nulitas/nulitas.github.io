@@ -20,12 +20,13 @@ const Experience: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: index * 0.2 }}
         >
-          <div className="flex justify-between items-baseline">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-baseline">
             <h3 className="text-xl font-semibold">{experience.title}</h3>
-            <span className="text-gray-600">{experience.date}</span>
+            <span className="text-gray-600 mt-1 md:mt-0">
+              {experience.date}
+            </span>
           </div>
-
-          <div className="text-justify">
+          <div className="text-justify mt-2">
             <p>{experience.description}</p>
           </div>
         </motion.div>
