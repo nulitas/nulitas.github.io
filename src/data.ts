@@ -48,7 +48,11 @@ export const header = {
 export const about = {
   description: `Informatics Engineering student with over 2 years of hands-on experience in Web Development, specializing in both internal and open-source projects.`,
   cv: "CV_Andra.pdf",
+  discord:
+    "https://lanyard.kyrie25.me/api/395543211709431818?imgStyle=square&gradient=e9d6d5-e9d6d5-f3b1b4-ffffff&bg=0d1117",
 };
+
+// <img src="https://lanyard.kyrie25.me/api/395543211709431818?imgStyle=square&gradient=e9d6d5-e9d6d5-f3b1b4-ffffff&bg=0d1117" width="50%" align="left" />
 
 export const experiences: ExperienceItem[] = [
   {
@@ -97,7 +101,7 @@ export const projects: ProjectItem[] = [
       "A virtual assistant website application that allows users to interact through a conversation (chat) setting. The interface can receive questions, provide answers, and store conversation history.",
     statusTags: ["Finished"],
     tags: ["React.js", "FastAPI"],
-    githubLink: "https://github.com/novelicious/tanya-sahabat",
+    githubLink: "https://github.com/nulitas/tanya-sahabat",
   },
   {
     title: "Novelicious",
