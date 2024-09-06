@@ -95,6 +95,15 @@ export const education: EducationItem[] = [
 
 export const projects: ProjectItem[] = [
   {
+    title: "Pilkadikip PNJ",
+    image: "/pilkadikippnj.png",
+    description:
+      "A Voting System built with Laravel, designed to manage elections efficiently. The system allows administrators to create and manage elections, including adding candidates, positions, and registered voters. ",
+    statusTags: ["Finished"],
+    tags: ["Laravel"],
+    githubLink: "https://github.com/nulitas/pilkadikip-pnj",
+  },
+  {
     title: "TanyaSahabat",
     image: "/chat.png",
     description:
@@ -113,13 +122,13 @@ export const projects: ProjectItem[] = [
     githubLink: "https://github.com/novelicious/novelicious-website",
   },
   {
-    title: "Notedx",
+    title: "Simple Note App",
     image: "/notedx.png",
     description:
       "Developed a note-taking application using ReactJS empowers users to capture and save ideas, while an archive feature keeps past entries organized for easy retrieval, ensuring valuable information remains readily accessible.",
     statusTags: ["Finished"],
     tags: ["React.js"],
-    githubLink: "https://github.com/nulitas/notedx",
+    githubLink: "https://github.com/nulitas/simple-note-app",
   },
   {
     title: "Anime OR Not",
@@ -129,15 +138,6 @@ export const projects: ProjectItem[] = [
     statusTags: ["Might update it later."],
     tags: ["Anime? Is that a cartoon?", "Flask"],
     githubLink: "https://github.com/nulitas/anime-or-not",
-  },
-  {
-    title: "CI4 Point of Sale",
-    image: "/posu.png",
-    description:
-      "Built a user-friendly point-of-sale (POS) application using CodeIgniter4 to streamline sales management.",
-    statusTags: ["Might update it later."],
-    tags: ["E-commerce lite "],
-    githubLink: "https://github.com/nulitas/ci4-point-of-sale",
   },
   {
     title: "Sipadu",
