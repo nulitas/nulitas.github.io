@@ -22,12 +22,12 @@ const About: React.FC = () => {
         </a>
       </div>
 
-      <div className=" mt-10">
+      {/* <div className=" mt-10">
         <h2 className="text-2xl font-semibold mb-4">Discord Activity</h2>
         <div className="flex justify-center">
           <img src={about.discord} />
         </div>
-      </div>
+      </div> */}
     </motion.section>
   );
 };
