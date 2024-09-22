@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import music from "../../public/audio/beneath-the-mask.mp3";
 
 const MusicPlayer = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const togglePlay = () => {
@@ -31,16 +31,13 @@ const MusicPlayer = () => {
       >
         <FaMusic size={20} aria-hidden="true" />
       </motion.div>
-
-      <h1 className="text-lg font-medium text-black">Beneath The Mask</h1>
-
+      <h1 className="text-lg font-medium text-black">Beneath the Mask</h1>
       {/* Audio Player */}
-      <audio ref={audioRef} src={music} autoPlay loop />
-
+      <audio ref={audioRef} src={music} loop />
       {/* Play/Pause Button */}
       <button
         onClick={togglePlay}
-        className="p-3 bg-[#1d1d1d] text-white rounded-full shadow-md hover:bg-[#cc0001] transition-colors"
+        className="p-3 bg-[#1d1d1d] text-white rounded-full shadow-md"
         aria-label={isPlaying ? "Pause Music" : "Play Music"}
       >
         {isPlaying ? <FaPause size={20} /> : <FaPlay size={20} />}

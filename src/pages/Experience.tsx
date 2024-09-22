@@ -20,7 +20,7 @@ const Experience: React.FC = () => {
       >
         Experience
       </motion.header>
-      <div className="relative border-l border-gray-300 pl-8 space-y-10">
+      <div className="relative border-l border-[#1d1d1d] pl-8 space-y-10">
         {experiences.map((experience, index) => (
           <motion.div
             key={index}
