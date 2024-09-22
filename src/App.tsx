@@ -6,7 +6,7 @@ import Education from "./pages/Education";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import { motion, useScroll, useSpring } from "framer-motion";
-
+import MusicPlayer from "./components/MusicPlayer";
 const App: React.FC = () => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -46,6 +46,8 @@ const App: React.FC = () => {
         <section id="skills" className="my-20">
           <Skills />
         </section>
+
+        <MusicPlayer />
       </main>
     </div>
   );
