@@ -1,38 +1,52 @@
 import React from "react";
-import Header from "./Components/Header";
-import About from "./Components/About";
-import Experience from "./Components/Experience";
-import Education from "./Components/Education";
-import Projects from "./Components/Projects";
-import Skills from "./Components/Skills";
-// import { Example } from "./Components/MyComponent";
-// import { MultiDirectionSlide } from "./Components/MultiDirectionSlide";
+import Header from "./pages/Header";
+import About from "./pages/About";
+import Experience from "./pages/Experience";
+import Education from "./pages/Education";
+import Projects from "./pages/Projects";
+import Skills from "./pages/Skills";
+import { motion, useScroll, useSpring } from "framer-motion";
+
 const App: React.FC = () => {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   return (
     <div className="bg-slate-50">
-      <div className="max-w-4xl mx-auto p-4">
-        {/* <MultiDirectionSlide /> */}
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-2 bg-[#1d1d1d] z-50"
+        style={{ scaleX }}
+      />
 
-        <div className="my-20">{/* <Example /> */}</div>
-        <div className="my-20">
+      <main className="max-w-4xl mx-auto p-4">
+        <section id="header" className="my-24">
           <Header />
-        </div>
-        <div className="my-20">
+        </section>
+
+        <section id="about" className="my-20">
           <About />
-        </div>
-        <div className="my-20">
-          <Experience />
-        </div>
-        <div className="my-20">
+        </section>
+
+        <section id="education" className="my-20">
           <Education />
-        </div>
-        <div className="my-20">
+        </section>
+
+        <section id="experience" className="my-20">
+          <Experience />
+        </section>
+
+        <section id="projects" className="my-28">
           <Projects />
-        </div>
-        <div className="my-20">
+        </section>
+
+        <section id="skills" className="my-20">
           <Skills />
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
   );
 };

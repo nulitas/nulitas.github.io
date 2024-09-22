@@ -10,7 +10,14 @@ const About: React.FC = () => {
       whileInView={{ opacity: 1, x: 0, scale: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <h2 className="text-2xl font-semibold mb-4">About</h2>
+      <motion.header
+        initial={{ opacity: 0, x: -50, scale: 0.5 }}
+        whileInView={{ opacity: 1, x: 0, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className="text-2xl font-semibold mb-8"
+      >
+        About
+      </motion.header>
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
         <p className="text-justify flex-1 pr-0 md:pr-4 mb-4 md:mb-0">
           {about.description}
@@ -21,13 +28,6 @@ const About: React.FC = () => {
           </button>
         </a>
       </div>
-
-      {/* <div className=" mt-10">
-        <h2 className="text-2xl font-semibold mb-4">Discord Activity</h2>
-        <div className="flex justify-center">
-          <img src={about.discord} />
-        </div>
-      </div> */}
     </motion.section>
   );
 };

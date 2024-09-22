@@ -2,22 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Customizes the whole scrollbar */
 ::-webkit-scrollbar {
-  width: 12px; /* Width of the scrollbar */
+  width: 12px;
 }
 
-/* Customizes the track of the scrollbar */
 ::-webkit-scrollbar-track {
-  background: #f4f4f5; /* Color of the track */
+  background: #f4f4f5;
 }
 
-/* Customizes the thumb of the scrollbar */
 ::-webkit-scrollbar-thumb {
-  background: #1d1d1d; /* Color of the thumb */
+  background: #1d1d1d;
 }
 
-/* Changes the thumb color on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #1d1d1d; /* Darker color on hover */
+  background: #1d1d1d;
 }

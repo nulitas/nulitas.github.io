@@ -38,7 +38,14 @@ const Projects: React.FC = () => {
 
   return (
     <section className="my-8 px-8">
-      <h3 className="text-2xl font-semibold mb-8">Projects</h3>
+      <motion.header
+        initial={{ opacity: 0, x: -50, scale: 0.5 }}
+        whileInView={{ opacity: 1, x: 0, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className="text-2xl font-semibold mb-8"
+      >
+        Projects
+      </motion.header>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <motion.div

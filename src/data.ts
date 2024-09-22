@@ -37,7 +37,7 @@ export const header = {
   name: "Andra Rizki Pratama",
   role: "Software Engineer | TensorFlow Certified",
   location: "Jakarta, Indonesia",
-  image: "me.jpg", // Add the path to the profile picture
+  image: "me.jpg",
   contact: {
     github: "https://github.com/andra-rizki-pratama",
     linkedin: "https://www.linkedin.com/in/andra-rizki-pratama/",
