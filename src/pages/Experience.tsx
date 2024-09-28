@@ -43,7 +43,7 @@ const Experience: React.FC = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: false, amount: 0.5 }}
           >
-            <div className="absolute -left-4 top-1 w-3 h-3 bg-[#1d1d1d] rounded-full"></div>
+            <div className="absolute -left-4 top-3 w-2 h-2 bg-[#1d1d1d] rounded-full"></div>
 
             <div className="flex flex-col space-y-2">
               <h3 className="text-xl font-semibold text-gray-700">
