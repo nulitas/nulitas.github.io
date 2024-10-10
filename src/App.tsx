@@ -47,7 +47,9 @@ const App: React.FC = () => {
           <Skills />
         </section>
 
-        <MusicPlayer />
+        <div className="hidden sm:block">
+          <MusicPlayer />
+        </div>
       </main>
     </div>
   );

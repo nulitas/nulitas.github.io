@@ -56,6 +56,21 @@ export const about = {
 
 export const experiences: ExperienceItem[] = [
   {
+    title:
+      "Direktorat Jenderal Pendidikan Tinggi, Riset dan Teknologi Kemdikbudristek",
+    position: "Front-End Developer",
+    date: "Sep 2024 - Present",
+    description:
+      "Achieved high honors (Top 10%) in my studies and placed among the top teams (Top 50 out of 639 Projects) in a Capstone Project. Collaborating on projects to predict fish freshness and fish prices in Indonesia.",
+  },
+  {
+    title: "Forum Mahasiswa Bidikmisi KIP Kuliah Politeknik Negeri Jakarta",
+    position: "Full Stack Developer",
+    date: "Jul 2024 - Sep 2024",
+    description:
+      "Achieved high honors (Top 10%) in my studies and placed among the top teams (Top 50 out of 639 Projects) in a Capstone Project. Collaborating on projects to predict fish freshness and fish prices in Indonesia.",
+  },
+  {
     title: "Bangkit Academy 2023 Batch 2",
     position: "Machine Learning Cohort",
     date: "Aug 2023 - Jan 2024",
@@ -70,7 +85,7 @@ export const experiences: ExperienceItem[] = [
       "Designed a web development course that included in-demand skills like HTML, CSS, JS, and building user logins with databases. To foster collaboration, I introduced online coding platforms and group presentations.",
   },
   {
-    title: "PT Surya Mandiri Teknologi",
+    title: "Poltekkes Kemenkes Jakarta III",
     position: "Full Stack Developer",
     date: "Nov 2022 - Feb 2023",
     description:

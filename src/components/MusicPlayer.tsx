@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { FaMusic, FaPause, FaPlay } from "react-icons/fa";
 import { motion } from "framer-motion";
-import music from "../../public/audio/beneath-the-mask.mp3";
+import music from "/audio/beneath-the-mask.mp3";
 
 const MusicPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
