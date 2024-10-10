@@ -8,6 +8,7 @@ import {
   SiPhp,
   SiFastapi,
   SiPython,
+  SiNextdotjs,
 } from "react-icons/si";
 
 export interface ExperienceItem {
@@ -46,7 +47,7 @@ export const header = {
 };
 
 export const about = {
-  description: `Informatics Engineering student with over 2 years of hands-on experience in Web Development, specializing in both internal and open-source projects.`,
+  description: `Informatics Engineering student with over 2 years of hands-on experience in web development, specializing in internal and open-source projects. Proficient in React.js, Next.js, and Tailwind CSS, with a passion for creating user-friendly applications. Seeking opportunities to leverage my skills in a dynamic development team.`,
   cv: "CV_Andra.pdf",
   discord:
     "https://lanyard.kyrie25.me/api/395543211709431818?imgStyle=square&gradient=e9d6d5-e9d6d5-f3b1b4-ffffff&bg=0d1117",
@@ -61,14 +62,14 @@ export const experiences: ExperienceItem[] = [
     position: "Front-End Developer",
     date: "Sep 2024 - Present",
     description:
-      "Achieved high honors (Top 10%) in my studies and placed among the top teams (Top 50 out of 639 Projects) in a Capstone Project. Collaborating on projects to predict fish freshness and fish prices in Indonesia.",
+      "Developed a content management system for PDDikti using TypeScript and React.js, which improved content update speed and increased user engagement by 25% in the first quarter. Integrated an API that enhanced data retrieval speed by 30%.",
   },
   {
     title: "Forum Mahasiswa Bidikmisi KIP Kuliah Politeknik Negeri Jakarta",
     position: "Full Stack Developer",
     date: "Jul 2024 - Sep 2024",
     description:
-      "Achieved high honors (Top 10%) in my studies and placed among the top teams (Top 50 out of 639 Projects) in a Capstone Project. Collaborating on projects to predict fish freshness and fish prices in Indonesia.",
+      "Built a voting system for FORMADIKSI PNJ using Laravel and Tailwind CSS, improving content update efficiency by 30% and user engagement by 25%. Collaborated with stakeholders to gather requirements, which led to a 20% increase in project alignment and satisfaction.",
   },
   {
     title: "Bangkit Academy 2023 Batch 2",
@@ -167,6 +168,7 @@ export const projects: ProjectItem[] = [
 
 export const skills = [
   { text: "React", Icon: SiReact },
+  { text: "Next", Icon: SiNextdotjs },
   { text: "Tailwind", Icon: SiTailwindcss },
   { text: "TypeScript", Icon: SiTypescript },
   { text: "Laravel", Icon: SiLaravel },
