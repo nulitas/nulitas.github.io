@@ -48,7 +48,7 @@ export const header = {
 
 export const about = {
   description: `Informatics Engineering student with over 2 years of hands-on experience in web development, specializing in internal and open-source projects. Proficient in React.js, Next.js, and Tailwind CSS, with a passion for creating user-friendly applications. Seeking opportunities to leverage my skills in a dynamic development team.`,
-  cv: "CV_AndraR.pdf",
+  cv: "CV_Andra.pdf",
   discord:
     "https://lanyard.kyrie25.me/api/395543211709431818?imgStyle=square&gradient=e9d6d5-e9d6d5-f3b1b4-ffffff&bg=0d1117",
 };
@@ -60,7 +60,7 @@ export const experiences: ExperienceItem[] = [
     title:
       "Direktorat Jenderal Pendidikan Tinggi, Riset dan Teknologi Kemdikbudristek",
     position: "Front-End Developer",
-    date: "Sep 2024 - Present",
+    date: "Sep 2024 - Dec 2024",
     description:
       "Developed a content management system for PDDikti using TypeScript and React.js, which improved content update speed and increased user engagement by 25% in the first quarter. Integrated an API that enhanced data retrieval speed by 30%.",
   },
