@@ -5,22 +5,22 @@ import Experience from "./pages/Experience";
 import Education from "./pages/Education";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
-import { motion, useScroll, useSpring } from "framer-motion";
+// import { motion, useScroll, useSpring } from "framer-motion";
 
 const App: React.FC = () => {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
+  // const { scrollYProgress } = useScroll();
+  // const scaleX = useSpring(scrollYProgress, {
+  //   stiffness: 100,
+  //   damping: 30,
+  //   restDelta: 0.001,
+  // });
 
   return (
     <div className="bg-slate-50">
-      <motion.div
+      {/* <motion.div
         className="fixed top-0 left-0 right-0 h-2 bg-[#1d1d1d] z-50"
         style={{ scaleX }}
-      />
+      /> */}
 
       <main className="max-w-4xl mx-auto p-4">
         <section id="header" className="my-24">
