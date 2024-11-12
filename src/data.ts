@@ -48,7 +48,7 @@ export const header = {
 
 export const about = {
   description: `Informatics Engineering student with over 2 years of hands-on experience in web development, specializing in internal and open-source projects. Proficient in React.js, Next.js, and Tailwind CSS, with a passion for creating user-friendly applications. Seeking opportunities to leverage my skills in a dynamic development team.`,
-  cv: "CV_Andra.pdf",
+  cv: "CV_Andra_Rizki_Pratama.pdf",
   discord:
     "https://lanyard.kyrie25.me/api/395543211709431818?imgStyle=square&gradient=e9d6d5-e9d6d5-f3b1b4-ffffff&bg=0d1117",
 };
