@@ -49,6 +49,9 @@ const Experience: React.FC = () => {
               <h3 className="text-xl font-semibold text-gray-700">
                 {experience.title}
               </h3>
+              <span className="text-sm text-gray-700">
+                {experience.position}
+              </span>
               <span className="text-sm text-gray-500">{experience.date}</span>
               <p className="text-gray-600 text-justify leading-relaxed">
                 {experience.description}

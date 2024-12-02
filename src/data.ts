@@ -99,7 +99,7 @@ export const education: EducationItem[] = [
     institution: "Politeknik Negeri Jakarta",
     degree: "Software Engineering / Informatics Engineering",
     date: "Jul 2021 - Present",
-    gpa: "3.74",
+    gpa: "3.78",
   },
   {
     institution: "SMK Telkom Jakarta",
