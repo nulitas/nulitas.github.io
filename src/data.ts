@@ -11,20 +11,13 @@ import {
   SiNextdotjs,
 } from "react-icons/si";
 
+import { IconType } from "react-icons";
+
 export interface ExperienceItem {
   title: string;
   position: string;
   date: string;
   description: string;
-}
-
-export interface ProjectItem {
-  title: string;
-  image: string;
-  description: string;
-  statusTags: string[];
-  tags: string[];
-  githubLink?: string;
 }
 
 export interface EducationItem {
@@ -52,8 +45,6 @@ export const about = {
   discord:
     "https://lanyard.kyrie25.me/api/395543211709431818?imgStyle=square&gradient=e9d6d5-e9d6d5-f3b1b4-ffffff&bg=0d1117",
 };
-
-// <img src="https://lanyard.kyrie25.me/api/395543211709431818?imgStyle=square&gradient=e9d6d5-e9d6d5-f3b1b4-ffffff&bg=0d1117" width="50%" align="left" />
 
 export const experiences: ExperienceItem[] = [
   {
@@ -109,62 +100,14 @@ export const education: EducationItem[] = [
   },
 ];
 
-export const projects: ProjectItem[] = [
-  {
-    title: "Pilkadikip PNJ",
-    image: "/pilkadikippnj.png",
-    description:
-      "A Voting System built with Laravel, designed to manage elections efficiently. The system allows administrators to create and manage elections, including adding candidates, positions, and registered voters. ",
-    statusTags: ["Finished"],
-    tags: ["Laravel"],
-    githubLink: "https://github.com/nulitas/pilkadikip-pnj",
-  },
-  {
-    title: "TanyaSahabat",
-    image: "/chat.png",
-    description:
-      "A virtual assistant website application that allows users to interact through a conversation (chat) setting. The interface can receive questions, provide answers, and store conversation history.",
-    statusTags: ["Finished"],
-    tags: ["React.js", "FastAPI"],
-    githubLink: "https://github.com/nulitas/tanya-sahabat",
-  },
-  {
-    title: "Novelicious",
-    image: "/novelicious.png",
-    description:
-      "Novelicious is an online bookstore dedicated to providing readers with a curated selection of Japanese light novels. As a book lover, I recognized the growing popularity of light novels and wanted to create a platform that celebrates this unique literary genre.",
-    statusTags: ["Finished"],
-    tags: ["React.js", "FastAPI", "E-commerce"],
-    githubLink: "https://github.com/novelicious/novelicious-website",
-  },
-  {
-    title: "Simple Note App",
-    image: "/notedx.png",
-    description:
-      "Developed a note-taking application using ReactJS empowers users to capture and save ideas, while an archive feature keeps past entries organized for easy retrieval, ensuring valuable information remains readily accessible.",
-    statusTags: ["Finished"],
-    tags: ["React.js"],
-    githubLink: "https://github.com/nulitas/simple-note-app",
-  },
-  {
-    title: "Anime OR Not",
-    image: "/anime_or_not.png",
-    description:
-      "Created a user-friendly web application using Flask that lets users upload images and get predictions from a powerful image classifier.",
-    statusTags: ["Might update it later."],
-    tags: ["Anime? Is that a cartoon?", "Flask"],
-    githubLink: "https://github.com/nulitas/anime-or-not",
-  },
-  {
-    title: "Sipadu",
-    image: "/sipadu.png",
-    description:
-      "A user-friendly reporting mechanism allowing consumers to report issues or repairs for specific items. A reporting function that would make it simple for consumers to report any problems or repairs required for a particular item mostly using Laravel Livewire and TailwindCSS for the design.",
-    statusTags: ["Deployed."],
-    tags: ["Laravel"],
-    githubLink: "https://sipadu.poltekkesjakarta3.ac.id/",
-  },
-];
+export interface ProjectItem {
+  title: string;
+  date: string;
+  image: string;
+  description: string;
+  tags: { text: string; Icon: IconType }[];
+  githubLink?: string;
+}
 
 export const skills = [
   { text: "React", Icon: SiReact },
@@ -176,4 +119,55 @@ export const skills = [
   { text: "Python", Icon: SiPython },
   { text: "PHP", Icon: SiPhp },
   { text: "MySQL", Icon: SiMysql },
+];
+
+const getSkills = (skillNames: string[]) =>
+  skills.filter((skill) => skillNames.includes(skill.text));
+
+export const projects: ProjectItem[] = [
+  {
+    title: "Pilkadikip PNJ",
+    image: "/pilkadikippnj.png",
+    description:
+      "A Voting System built with Laravel, designed to manage elections efficiently.",
+    date: "Sep 2024",
+    tags: getSkills(["Laravel"]),
+    githubLink: "https://github.com/nulitas/pilkadikip-pnj",
+  },
+  {
+    title: "TanyaSahabat",
+    image: "/chat.png",
+    description:
+      "A virtual assistant website application that allows users to interact through a conversation (chat) setting.",
+    tags: getSkills(["React", "FastAPI"]),
+    date: "Aug 2024",
+    githubLink: "https://github.com/nulitas/tanya-sahabat",
+  },
+  {
+    title: "Novelicious",
+    image: "/novelicious.png",
+    description:
+      "An online bookstore dedicated to providing readers with Japanese light novels.",
+    tags: getSkills(["React", "FastAPI", "TypeScript"]),
+    date: "Aug 2024",
+    githubLink: "https://github.com/novelicious/novelicious-website",
+  },
+
+  {
+    title: "Anime OR Not",
+    image: "/anime_or_not.png",
+    description: "A Flask-based web app for image classification.",
+    tags: getSkills(["Python"]),
+    date: "Mar 2024",
+    githubLink: "https://github.com/nulitas/anime-or-not",
+  },
+  {
+    title: "Sipadu",
+    image: "/sipadu.png",
+    description:
+      "A reporting mechanism for consumers using Laravel and TailwindCSS.",
+    tags: getSkills(["Laravel", "Tailwind"]),
+    date: "Nov 2023",
+    githubLink: "https://sipadu.poltekkesjakarta3.ac.id/",
+  },
 ];

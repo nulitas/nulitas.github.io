@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import { skills } from "../data";
 import { motion } from "framer-motion";
 
-const SkillItem: React.FC<{ text: string; Icon: React.ComponentType<any> }> = ({
+const SkillItem: React.FC<{ text: string; Icon: React.ElementType }> = ({
   text,
   Icon,
 }) => {
@@ -13,7 +12,7 @@ const SkillItem: React.FC<{ text: string; Icon: React.ComponentType<any> }> = ({
       whileTap={{ scale: 0.95 }}
       drag
       dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
-      className="bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm flex items-center gap-2 hover:cursor-pointer"
+      className="border-black border-2 bg-white hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]  text-sm flex items-center gap-2  px-4 py-2 "
     >
       <Icon size={20} />
       {text}

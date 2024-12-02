@@ -22,11 +22,13 @@ const About: React.FC = () => {
         <p className="text-justify flex-1 pr-0 md:pr-4 mb-4 md:mb-0">
           {about.description}
         </p>
-        <a href={about.cv} target="_blank" rel="noopener noreferrer">
-          <button className="px-6 py-3 text-black font-semibold underline">
-            resume.
-          </button>
-        </a>
+        <button
+          onClick={() => window.open(about.cv, "_blank")}
+          rel="noopener noreferrer"
+          className="border-black border-2 bg-white hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]  text-sm flex items-center gap-2  px-4 py-2 "
+        >
+          Resume
+        </button>
       </div>
     </motion.section>
   );
