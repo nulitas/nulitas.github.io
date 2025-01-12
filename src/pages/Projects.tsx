@@ -42,7 +42,7 @@ const Projects: React.FC = () => {
                     {project.tags.map((tag, index) => (
                       <span
                         key={index}
-                        className=" border-black border-2 bg-white hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-gray-600 text-sm flex items-center px-2 py-1"
+                        className=" border-black border-2 bg-white hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] text-sm flex items-center px-2 py-1"
                       >
                         <tag.Icon className="mr-1" />
                         {tag.text}

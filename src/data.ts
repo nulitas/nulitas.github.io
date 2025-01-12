@@ -48,6 +48,12 @@ export const about = {
 
 export const experiences: ExperienceItem[] = [
   {
+    title: "Artbat Live",
+    position: "Front-End Developer",
+    date: "Dec 2024 - Feb 2025",
+    description: "-",
+  },
+  {
     title:
       "Direktorat Jenderal Pendidikan Tinggi, Riset dan Teknologi Kemdikbudristek",
     position: "Front-End Developer",
@@ -90,7 +96,7 @@ export const education: EducationItem[] = [
     institution: "Politeknik Negeri Jakarta",
     degree: "Software Engineering / Informatics Engineering",
     date: "Jul 2021 - Present",
-    gpa: "3.78",
+    gpa: "3.76",
   },
   {
     institution: "SMK Telkom Jakarta",
@@ -131,7 +137,7 @@ export const projects: ProjectItem[] = [
     description:
       "A Voting System built with Laravel, designed to manage elections efficiently.",
     date: "Sep 2024",
-    tags: getSkills(["Laravel"]),
+    tags: getSkills(["Laravel", "MySQL"]),
     githubLink: "https://github.com/nulitas/pilkadikip-pnj",
   },
   {
@@ -148,7 +154,7 @@ export const projects: ProjectItem[] = [
     image: "/novelicious.png",
     description:
       "An online bookstore dedicated to providing readers with Japanese light novels.",
-    tags: getSkills(["React", "FastAPI", "TypeScript"]),
+    tags: getSkills(["React", "FastAPI", "MySQL", "TypeScript"]),
     date: "Aug 2024",
     githubLink: "https://github.com/novelicious/novelicious-website",
   },
@@ -166,8 +172,8 @@ export const projects: ProjectItem[] = [
     image: "/sipadu.png",
     description:
       "A reporting mechanism for consumers using Laravel and TailwindCSS.",
-    tags: getSkills(["Laravel", "Tailwind"]),
-    date: "Nov 2023",
+    tags: getSkills(["Laravel", "Tailwind", "MySQL"]),
+    date: "Jan 2023",
     githubLink: "https://sipadu.poltekkesjakarta3.ac.id/",
   },
 ];

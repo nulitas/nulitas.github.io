@@ -5,7 +5,7 @@ import { SiLinkedin, SiGithub, SiTelegram } from "react-icons/si";
 const Header: React.FC = () => {
   return (
     <motion.header
-      className="flex flex-col items-center text-center my-8 space-y-4"
+      className="flex flex-col items-center text-center my-8 space-y-4 "
       initial={{ opacity: 0, y: -20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false, amount: 0.5 }}
@@ -14,7 +14,7 @@ const Header: React.FC = () => {
       <motion.img
         src={header.image}
         alt="Profile"
-        className="rounded-full w-24 h-24 object-cover"
+        className=" w-24 h-24 object-cover border-black border-2 shadow-[8px_8px_0px_rgba(0,0,0,1)] bg-white"
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
         viewport={{ once: false, amount: 0.5 }}
