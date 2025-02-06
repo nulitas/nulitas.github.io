@@ -49,9 +49,10 @@ export const about = {
 export const experiences: ExperienceItem[] = [
   {
     title: "Artbat Live",
-    position: "Front-End Developer",
-    date: "Dec 2024 - Feb 2025",
-    description: "-",
+    position: "Software Engineer",
+    date: "Dec 2024 - Present",
+    description:
+      "Refactored a Share Artwork feature using AWS Amplify and React.js, enabling users to generate shareable links to specific artworks, increasing artwork visibility by 40%. Redesigned the Share Image Button by improving its placement and design, leading to a 35% boost in user interaction with the sharing feature.",
   },
   {
     title:
@@ -96,7 +97,7 @@ export const education: EducationItem[] = [
     institution: "Politeknik Negeri Jakarta",
     degree: "Software Engineering / Informatics Engineering",
     date: "Jul 2021 - Present",
-    gpa: "3.76",
+    gpa: "3.78",
   },
   {
     institution: "SMK Telkom Jakarta",

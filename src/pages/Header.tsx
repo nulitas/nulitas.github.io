@@ -14,7 +14,7 @@ const Header: React.FC = () => {
       <motion.img
         src={header.image}
         alt="Profile"
-        className=" w-24 h-24 object-cover border-black border-2 shadow-[8px_8px_0px_rgba(0,0,0,1)] bg-white"
+        className="w-24 h-24 object-cover bg-white rounded-full "
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
         viewport={{ once: false, amount: 0.5 }}
