@@ -49,7 +49,7 @@ export const about = {
 export const experiences: ExperienceItem[] = [
   {
     title: "Artbat Live",
-    position: "Software Engineer",
+    position: "Front-End Developer",
     date: "Dec 2024 - Present",
     description:
       "Refactored a Share Artwork feature using AWS Amplify and React.js, enabling users to generate shareable links to specific artworks, increasing artwork visibility by 40%. Redesigned the Share Image Button by improving its placement and design, leading to a 35% boost in user interaction with the sharing feature.",
